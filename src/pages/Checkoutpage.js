@@ -9,17 +9,16 @@ class Checkoutpage {
         this.inputbox_Lastname = page.getByTestId('lastName');
         this.inputbox_PostalCode = page.getByTestId('postalCode');
         this.btn_Continue = page.getByTestId('continue');
-        
-        this.label_checkoutInfo = page.getByTestId('Checkout: Your Information');
- this.label_CheckoutOverview = page.getByText('Checkout: Overview');
+         this.label_checkoutInfo = page.getByTestId('Checkout: Your Information');
+         this.label_CheckoutOverview = page.getByText('Checkout: Overview');
         this.txt_CartQty = page.getByTestId('item-quantity');
-         this.label_PaymentInfo = page.getByText('Payment Information:');
-          this.label_ShippingInfo = page.getByText('Shipping Information:');
-           this.label_PriceTotal = page.getByText('Price Total');
-         this.label_PaymentInfo = page.getByText('Payment Information:');
-this.btn_Finish = page.getByRole('finish');
-this.heading_orderConfirmMsg = page.getByText('Thank you for your order!');
-this.txt_DispatchConfirmMsg = page.getByText('Your order has been dispatched, and will arrive just as fast as the pony can get there!');
+        this.label_PaymentInfo = page.getByText('Payment Information:');
+        this.label_ShippingInfo = page.getByText('Shipping Information:');
+        this.label_PriceTotal = page.getByText('Price Total');
+        this.label_PaymentInfo = page.getByText('Payment Information:');
+        this.btn_Finish = page.getByRole('finish');
+        this.heading_orderConfirmMsg = page.getByText('Thank you for your order!');
+        this.txt_DispatchConfirmMsg = page.getByText('Your order has been dispatched, and will arrive just as fast as the pony can get there!');
     }
 
       
