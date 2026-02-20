@@ -133,23 +133,19 @@ async clickContinueShoppingbtn() {
 
   async addProductsToCartAndValidateDetails() {
     await this.addTwoDistinctItemsToCart();
-     await this.page.waitForTimeout(2000);
     await this.getCartDetails();
-     await this.page.waitForTimeout(2000);
     await this.clickContinueShoppingbtn();
-     await this.page.waitForTimeout(2000);
+     
   }
 async clickSortDropdownAndSelectOption(){
     await this.clickFilterDropdown();
-   await this.page.waitForTimeout(2000);
-    await this.selectSortOption('lohi');
-    await this.page.waitForTimeout(2000);
-    await this.validatePriceLowToHighSorting();
+   await this.selectSortOption('lohi');
+  await this.validatePriceLowToHighSorting();
 }
 
 async clickonCart(){
     await this.clickOnCartBadge();
-    await this.page.waitForTimeout(2000);
+    //await this.page.waitForTimeout(2000);
 }
 
 
