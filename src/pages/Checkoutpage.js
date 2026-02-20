@@ -42,7 +42,7 @@ class Checkoutpage {
     await this.enterFirstName(firstName);
     await this.enterLastName(lastName);
     await this.enterPostalCode(postalCode);
-    await this.page.waitForTimeout(2000);
+   // await this.page.waitForTimeout(2000);
   }
    async clickcontinuebtn() {
     await this.btn_Continue.click();
